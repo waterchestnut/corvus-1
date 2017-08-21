@@ -1,5 +1,5 @@
 FROM golang:latest
-MAINTAINER Tomasen "https://github.com/waterchestnut"
+MAINTAINER waterchestnut "https://github.com/waterchestnut"
 
 RUN apt-get update && apt-get install -y autoconf && \
   apt-get clean autoclean && \
