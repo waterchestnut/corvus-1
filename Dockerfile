@@ -20,6 +20,8 @@ RUN rm -rf /go/src/*
 WORKDIR /go/bin
 
 # Run the frontd command by default when the container starts.
-ENTRYPOINT /go/bin/corvus
+ENTRYPOINT ["/go/bin/corvus","/usr/local/etc/corvus/corvus.conf"]
 
 EXPOSE 6380
+
+VOLUME "/usr/local/etc/corvus"
